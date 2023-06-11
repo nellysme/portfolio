@@ -1,0 +1,296 @@
+body{
+    
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/*nav*/
+
+nav ul{
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+nav li{
+    display: block;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.current{
+    font-weight: bold;
+}
+
+.active {
+    border-bottom: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+/*split*/ 
+
+
+.left-content{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+
+.right-content{
+   
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+
+.content{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+.content .left-content,
+.content .right-content {
+    width: 100%;
+}
+
+.left-content {
+    background-color: #403f40;
+}
+
+.right-content img {
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+
+/*title in split*/
+
+.title, .second-title{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.second-title{
+    font-weight: lighter;
+    padding: 0px 0px 30px 50px;
+}
+
+.title{
+    padding: 100px 0px 0px 50px;
+}
+
+
+/*button*/
+
+button {
+    
+    background-color: transparent;
+    font-size: 18px;
+    border: white 2px solid;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-contact {
+    padding: 8px 30px 8px 30px;
+}
+
+button:hover {
+    background-color: #FFB8B8;
+    border: #FFB8B8 2px solid;
+    font-size: bold;
+}
+
+/*cards*/
+
+*{
+    box-sizing: border-box;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+
+.row h1{
+    text-align: center;
+}
+
+
+.row::after{
+    display: table;
+    clear: both;
+}
+
+.row{
+    padding-top: 150px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card{
+    height: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+    transform: scale(1.03);
+    
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card a:hover{
+    text-decoration: underline;
+}
+
+.title-card{
+    padding: 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/*about*/
+
+.about{
+    color: white;
+    margin-top: 650px;
+    height: 300px;
+    background-color: #403f40;
+    width: 100%;
+    text-align: center;
+}
+
+.about-me, .title-me {
+    
+    padding: 20px;
+}
+
+.title-me{
+   padding-top: 70px;
+}
+
+/*contact*/
+.contact{
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+/*footer*/
+
+.footer-container{
+    margin-top: 100px;
+    padding: 10px;
+    background-color: #2c2c2c;
+    text-align: center;
+}
+
+/*media q*/
+
+
+@media screen and (min-width:1000px) {
+
+    .content {
+        display: flex;
+    }
+
+    .content .left-content,
+    .content .right-content {
+        width: 50%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        font-size: 16px;
+        height: 255px;
+    }
+
+    .column{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        font-size: 16px;
+        height: 255px;
+    }
+
+    .column {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .title-me{
+        margin-top: 1700px;
+    }
+
+    .contact{
+        margin-top: -1600px;
+    }
+
+
+}
+
+
+
