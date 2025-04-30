@@ -2,6 +2,8 @@
 
 Hei! Jeg heter Nelly, og dette er min portefølje med ulike kodeoppgaver jeg har levert i forbindelse med skole. Her finner du prosjekter jeg har jobbet med innen HTML, CSS og JavaScript.
 
+🔗 **Live demo av porteføljen:** [superb-youtiao-45f116.netlify.app](https://superb-youtiao-45f116.netlify.app/)
+
 ## 📁 Prosjekter
 
 - **My Plans** *(eksamensoppgave)*  
